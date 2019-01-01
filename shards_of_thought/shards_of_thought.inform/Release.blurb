@@ -20,7 +20,7 @@ picture 1 "/usr/local/share/inform7/Internal/Miscellany/Cover.jpg"
 
 placeholder [IFID] = "46C93DB0-5528-4AB4-813A-55BA2FF6B000"
 placeholder [RELEASE] = "1"
-placeholder [YEAR] = "2018"
+placeholder [YEAR] = "2019"
 placeholder [TITLE] = "shards_of_thought"
 placeholder [AUTHOR] = "Egidijus"
 placeholder [BLURB] = "A work of interactive fiction."

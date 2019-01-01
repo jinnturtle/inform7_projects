@@ -20,15 +20,23 @@ Book II - Properties
 
 Book III - Activities
 
-Understand the command "read" as something new. Understand "read [something]" as reading. Reading is an action applying to one thing, requiring light.
+Understand the command "read" as something new.
+Reading is an action applying to one thing, requiring light.
 Check reading: if the printing of the noun is "blank", say "Nothing is writen in [the noun]." instead.
 Carry out reading: say "You read: [printing of the noun][line break]".
 Report reading: do nothing.
+Understand "read [something]" as reading.
 
 Dialing it to is an action applying to one thing and one number.
 Check dialing it to: if the noun is not the code dial, say "Impossible, there are no keys on [the noun]." instead.
 Report dialing it to: say "[The noun] beeps as you press the keys.[line break]".
 Understand "Dial [something] to [a number]" as dialing it to.
+
+Understand the command "type" as something new.
+Typing it into is an action applying to one number and one thing.
+Report typing it into: do nothing.
+Understand "type [a number] into [something]" as typing it into.
+
 
 Book III - Spacetime Laws (time, gravity, etc)
 
@@ -37,8 +45,6 @@ Book III - Spacetime Laws (time, gravity, etc)
 Volume II - The Seen
 
 Book I - The Space Station (Act I)
-
-Test me with "n / w / dial code dial to 123 / w / dial code dial to 472 / w".
 
 Cabin E is a room. "A white, cyllindrical room with a circular window at one end and a hatch-like door at the other, quite fitting of a space station compartment."
 A round window is here. Description of the round window is "Much of the view through the window is occupied by a black sphere, it is patterned with luminous circles and lines of pale green light, some of the circles are concentric - especially around what seems to be a cenetral area in the pattern - and some are unfinished, there are also some dots and streaks of yellowish coloration. Throughout the glowing pattern the intencity of illumination varies as if the entire thing is made of thousands of tiny lights, it may be a giant, greenish, concentric, city if the sphere is a planet. The sphere is surrounded by stars, it does look like a planet."
@@ -49,7 +55,7 @@ The bookshelf is a container in Cabin E. It is fixed in place.
 Intersection E is north of hatch E-E. "A small square room with hatches on all six of it's walls." Hatch E-E is north of Cabin E and south of Intersection E. 
 Hatch E-E is a door. It is closed.
 Code dial is a thing in the Intersection E.
-After dialing the code dial to 004000001:
+After typing 004000001 into the code dial:
     now the shuttle bay hatch is unlocked;
     now the colour of dock E indicator is "green";
     say "A green light on the thing suggests that something happened."

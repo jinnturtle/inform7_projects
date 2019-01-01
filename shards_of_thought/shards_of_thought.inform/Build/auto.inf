@@ -43,7 +43,7 @@ Global Story = BC_0;
 Constant Headline BC_1;
 Constant Story_Author BC_2;
 Release 1;
-Serial "181231";
+Serial "190101";
 
 Default Story 0;
 Default Headline 0;
@@ -758,7 +758,7 @@ Constant life = NULL;
 ! Definitions.i6t: Action Count
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant ActionCount = 79;
+Constant ActionCount = 80;
 
 
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
@@ -5743,7 +5743,7 @@ Global match_from;                  ! At what word of the input do they begin?
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 [ KeyboardPrimitive a_buffer a_table;
-#Ifdef DEBUG; #Iftrue (1 > 0);
+#Ifdef DEBUG; #Iftrue (2 > 0);
 	return TestKeyboardPrimitive(a_buffer, a_table);
 #Endif; #Endif;
 	return VM_ReadKeyboard(a_buffer, a_table);
@@ -9977,7 +9977,7 @@ Array valued_property_offsets --> valued_property_offsets_SIZE;
 ! Output.i6t: Activities
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant NUMBER_RULEBOOKS_CREATED = 368;
+Constant NUMBER_RULEBOOKS_CREATED = 371;
 Constant V0_printing_the_name = 0;
 Constant V1_printing_the_plural_name = 1;
 Constant V2_printing_a_number = 2;
@@ -10163,12 +10163,12 @@ Constant REL_BLOCK_HEADER ($100*6 + $$1101)*$10000;
     value ! Implied call parameter
     ;
     switch(value) {
-        I71_german_language: print "German language";
-        I72_english_language: print "English language";
-        I73_italian_language: print "Italian language";
-        I74_french_language: print "French language";
-        I75_swedish_language: print "Swedish language";
-        I76_spanish_language: print "Spanish language";
+        I71_french_language: print "French language";
+        I72_swedish_language: print "Swedish language";
+        I73_spanish_language: print "Spanish language";
+        I74_italian_language: print "Italian language";
+        I75_english_language: print "English language";
+        I76_german_language: print "German language";
         default: print "<illegal natural language>";
     }
 ];
@@ -10450,7 +10450,7 @@ Constant REL_BLOCK_HEADER ($100*6 + $$1101)*$10000;
         44: return I77_figure_of_cover;
         45: return ;
         46: return ;
-        47: return I71_german_language;
+        47: return I71_french_language;
         48: return I80_didn_t_understand_error;
         49: return I106_present_tense;
         50: return I112_first_person_singular;
@@ -10635,7 +10635,7 @@ VPH_Class ValuePropertyHolder_47
     with p14_adaptive_text_viewpoint KOVP_47_P14
 ;
 ! Storage for property p14_adaptive_text_viewpoint of kind 
-Array KOVP_47_P14 table 0 0 (I112_first_person_singular) (I115_first_person_plural) (I112_first_person_singular) (I112_first_person_singular) (I112_first_person_singular) (I112_first_person_singular) ;
+Array KOVP_47_P14 table 0 0 (I112_first_person_singular) (I112_first_person_singular) (I112_first_person_singular) (I112_first_person_singular) (I115_first_person_plural) (I112_first_person_singular) ;
 Class K0_kind 
     has ~pluralname
     has ~proper
@@ -10661,7 +10661,7 @@ Class K1_room
 
 Class K2_thing 
     class K0_kind
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with component_parent nothing
     with component_child nothing
     with component_sibling nothing
@@ -10899,7 +10899,7 @@ Object I51_north "" Compass
     class K3_direction
     with name 'north' 'directions//p' 'n//' 
     with parse_name Parse_Name_GV1
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 3
     with IK3_Count 0
     with IK3_Link I52_northeast
@@ -10915,7 +10915,7 @@ Object I52_northeast "" Compass
     class K3_direction
     with name 'northeast' 'directions//p' 'ne' 
     with parse_name Parse_Name_GV2
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 3
     with IK3_Count 1
     with IK3_Link I53_northwest
@@ -10931,7 +10931,7 @@ Object I53_northwest "" Compass
     class K3_direction
     with name 'northwest' 'directions//p' 'nw' 
     with parse_name Parse_Name_GV3
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 3
     with IK3_Count 2
     with IK3_Link I54_south
@@ -10947,7 +10947,7 @@ Object I54_south "" Compass
     class K3_direction
     with name 'south' 'directions//p' 's//' 
     with parse_name Parse_Name_GV4
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 3
     with IK3_Count 3
     with IK3_Link I55_southeast
@@ -10963,7 +10963,7 @@ Object I55_southeast "" Compass
     class K3_direction
     with name 'southeast' 'directions//p' 'se' 
     with parse_name Parse_Name_GV5
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 3
     with IK3_Count 4
     with IK3_Link I56_southwest
@@ -10979,7 +10979,7 @@ Object I56_southwest "" Compass
     class K3_direction
     with name 'southwest' 'directions//p' 'sw' 
     with parse_name Parse_Name_GV6
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 3
     with IK3_Count 5
     with IK3_Link I57_east
@@ -10995,7 +10995,7 @@ Object I57_east "" Compass
     class K3_direction
     with name 'east' 'directions//p' 'e//' 
     with parse_name Parse_Name_GV7
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 3
     with IK3_Count 6
     with IK3_Link I58_west
@@ -11011,7 +11011,7 @@ Object I58_west "" Compass
     class K3_direction
     with name 'west' 'directions//p' 'w//' 
     with parse_name Parse_Name_GV8
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 3
     with IK3_Count 7
     with IK3_Link I59_up
@@ -11027,7 +11027,7 @@ Object I59_up "" Compass
     class K3_direction
     with name 'up' 'directions//p' 'u//' 
     with parse_name Parse_Name_GV9
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 3
     with IK3_Count 8
     with IK3_Link I60_down
@@ -11043,7 +11043,7 @@ Object I60_down "" Compass
     class K3_direction
     with name 'down' 'directions//p' 'd//' 
     with parse_name Parse_Name_GV10
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 3
     with IK3_Count 9
     with IK3_Link in_obj
@@ -11059,7 +11059,7 @@ Object in_obj "" Compass
     class K3_direction
     with name 'inside' 'directions//p' 'in' 
     with parse_name Parse_Name_GV11
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 3
     with IK3_Count 10
     with IK3_Link out_obj
@@ -11075,7 +11075,7 @@ Object out_obj "" Compass
     class K3_direction
     with name 'outside' 'directions//p' 'out' 
     with parse_name Parse_Name_GV12
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 3
     with IK3_Count 11
     with IK3_Link nothing
@@ -11093,15 +11093,15 @@ Object selfobj ""
     	with saved_short_name TX_L_36,
      
     with parse_name Parse_Name_GV13
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 8
+    with IK2_Count 0
     with IK2_Link I129_round_window
     with IK8_Count 0
     with IK8_Link nothing
     with vector 0
     with cap_short_name BC_161
     has mark_as_thing
-    with IK2_Count 0
     has proper
     has privately_named
     has concealed
@@ -11133,12 +11133,12 @@ Object I128_cabin_e ""
 Object -> I129_round_window ""
     class K2_thing
     with name 'round' 'window' 'things//p' 
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 2
+    with IK2_Count 1
     with IK2_Link I130_bookshelf
     with vector 0
     has mark_as_thing
-    with IK2_Count 1
     with short_name BC_173
     with description BC_174
     with initial BC_175
@@ -11150,14 +11150,14 @@ Object -> I129_round_window ""
 Object -> I130_bookshelf ""
     class K5_container
     with name 'bookshelf' 'containers//p' 
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 5
+    with IK2_Count 2
     with IK2_Link I131_green_book
     with IK5_Count 0
     with IK5_Link nothing
     with vector 0
     has mark_as_thing
-    with IK2_Count 2
     has static
     with short_name BC_179
     with description BC_180
@@ -11170,14 +11170,14 @@ Object -> I130_bookshelf ""
 Object -> -> I131_green_book ""
     class K18_book
     with name 'green' 'book' 'books//p' 
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with IK18_Count 0
     with IK18_Link I132_blue_book
     with KD_Count 18
+    with IK2_Count 3
     with IK2_Link I132_blue_book
     with vector 0
     has mark_as_thing
-    with IK2_Count 3
     with p16_printing BC_185
     with short_name BC_186
     with description BC_187
@@ -11190,14 +11190,14 @@ Object -> -> I131_green_book ""
 Object -> -> I132_blue_book ""
     class K18_book
     with name 'blue' 'book' 'books//p' 
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with IK18_Count 1
     with IK18_Link nothing
     with KD_Count 18
+    with IK2_Count 4
     with IK2_Link I135_code_dial
     with vector 0
     has mark_as_thing
-    with IK2_Count 4
     with p16_printing BC_192
     with short_name BC_193
     with description BC_194
@@ -11227,12 +11227,12 @@ Object I133_intersection_e ""
 Object -> I135_code_dial ""
     class K2_thing
     with name 'code' 'dial' 'things//p' 
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 2
+    with IK2_Count 6
     with IK2_Link I136_dock_e_hatch_indicator
     with vector 0
     has mark_as_thing
-    with IK2_Count 6
     has proper
     with short_name BC_204
     with description BC_205
@@ -11245,14 +11245,14 @@ Object -> I135_code_dial ""
 Object -> I136_dock_e_hatch_indicator ""
     class K16_indicator_light
     with name 'dock' 'e//' 'hatch' 'indicator'  'lights//p' 
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 16
+    with IK2_Count 7
     with IK2_Link I134_hatch_e_e
     with IK16_Count 0
     with IK16_Link nothing
     with vector 0
     has mark_as_thing
-    with IK2_Count 7
     has proper
     with short_name BC_210
     with p15_colour BC_211
@@ -11266,8 +11266,9 @@ Object -> I136_dock_e_hatch_indicator ""
 Object I134_hatch_e_e ""
     class K4_door
     with name 'hatch' 'e-e' 'doors//p' 
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 4
+    with IK2_Count 5
     with IK2_Link I139_launch_lever
     with IK4_Count 0
     with IK4_Link I138_shuttle_bay_hatch
@@ -11287,7 +11288,6 @@ Object I134_hatch_e_e ""
     with found_in I133_intersection_e I128_cabin_e
     with cap_short_name BC_217
     has mark_as_thing
-    with IK2_Count 5
     has ~open
     has proper
     with short_name BC_218
@@ -11318,14 +11318,14 @@ Object I137_shuttle_bay_5 ""
 Object -> I139_launch_lever ""
     class K17_lever
     with name 'launch' 'lever' 'levers//p' 
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
+    with IK17_Link nothing
     with KD_Count 17
+    with IK2_Count 9
     with IK2_Link I138_shuttle_bay_hatch
     with IK17_Count 0
-    with IK17_Link nothing
     with vector 0
     has mark_as_thing
-    with IK2_Count 9
     has proper
     with short_name BC_229
     with description BC_230
@@ -11338,8 +11338,9 @@ Object -> I139_launch_lever ""
 Object I138_shuttle_bay_hatch ""
     class K4_door
     with name 'shuttle' 'bay' 'hatch' 'doors//p' 
-    with action_bitmap 0 0 0 0 0 
+    with action_bitmap 0 0 0 0 0 0 
     with KD_Count 4
+    with IK2_Count 8
     with IK2_Link nothing
     with IK4_Count 1
     with IK4_Link nothing
@@ -11358,7 +11359,6 @@ Object I138_shuttle_bay_hatch ""
         if (loc == I137_shuttle_bay_5) return I133_intersection_e; return I137_shuttle_bay_5;],
     with found_in I137_shuttle_bay_5 I133_intersection_e
     has mark_as_thing
-    with IK2_Count 8
     has ~open
     has lockable
     has locked
@@ -11370,12 +11370,12 @@ Object I138_shuttle_bay_hatch ""
     with article BC_240
 ;
 
-Constant I71_german_language = 1;
-Constant I72_english_language = 2;
-Constant I73_italian_language = 3;
-Constant I74_french_language = 4;
-Constant I75_swedish_language = 5;
-Constant I76_spanish_language = 6;
+Constant I71_french_language = 1;
+Constant I72_swedish_language = 2;
+Constant I73_spanish_language = 3;
+Constant I74_italian_language = 4;
+Constant I75_english_language = 5;
+Constant I76_german_language = 6;
 Constant I77_figure_of_cover = 1;
 Constant I78_entire_game = 1;
 Constant I80_didn_t_understand_error = 1;
@@ -11422,7 +11422,7 @@ Constant I124_feminine_gender = 3;
 Array Global_Vars -->
   (false) ! 7 darkness witnessed
   (BC_241) ! 25 command prompt
-  (I72_english_language) ! 29 language of play
+  (I75_english_language) ! 29 language of play
   (BC_242) ! 32 story author
   (BC_243) ! 33 story headline
   (BC_244) ! 34 story genre
@@ -11443,7 +11443,7 @@ Array Global_Vars -->
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
 Array tab_0_0 table $0664 0 (BC_246) (BC_247) (BC_248) (BC_249) (BC_250) ;
 Array tab_0_1 table $0465 1 (0) (0) (1) (0) (0) ;
-Array tab_0_2 table $2066 2 (Consult_Grammar_94) (Consult_Grammar_95) (Consult_Grammar_96) (Consult_Grammar_97) (Consult_Grammar_98) ;
+Array tab_0_2 table $2066 2 (Consult_Grammar_95) (Consult_Grammar_96) (Consult_Grammar_97) (Consult_Grammar_98) (Consult_Grammar_99) ;
 Array tab_0_3 table $0067 3 (IMMEDIATELY_RESTART_VM_R) (IMMEDIATELY_RESTORE_SAVED_R) ( TABLE_NOVALUE) (IMMEDIATELY_QUIT_R) (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4 ( TABLE_NOVALUE) ( TABLE_NOVALUE) (V27_amusing_a_victorious_pla) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
@@ -11575,8 +11575,9 @@ Array ActionData table
   ##Pronouns  $$00100000  OBJECT_TY OBJECT_TY  0 20076
   ##A77_reading  $$00001101  OBJECT_TY OBJECT_TY  0 20077
   ##A78_dialing_it_to  $$00011001  OBJECT_TY NUMBER_TY  0 20078
+  ##A79_typing_it_into  $$00011010  NUMBER_TY OBJECT_TY  0 20079
 ;
-Constant AD_RECORDS = 79;
+Constant AD_RECORDS = 80;
 [ ANSTVC_7 
     pos ! Implied call parameter
     state ! Implied call parameter
@@ -11721,6 +11722,7 @@ Constant AD_RECORDS = 79;
         ##Pronouns: print "requesting the pronoun meanings"; 
         ##A77_reading: print "reading"; if (for_say ~= 2) { print " "; DA_Name(n); }
         ##A78_dialing_it_to: print "dialing"; print " "; if (for_say == 2) print "it"; else DA_Name(n); print " "; print "to"; if (for_say ~= 2) { print " "; DA_Number(parsed_number); }
+        ##A79_typing_it_into: print "typing"; print " "; if (for_say == 2) print "it"; else DA_Number(parsed_number); print " "; print "into"; if (for_say ~= 2) { print " "; DA_Name(s); }
     }
 ];
 
@@ -11734,10 +11736,10 @@ Array ActionCoding -->
     ##Listen ##Taste ##Cut ##Jump ##Tie ##Drink ##Sorry ##Swing
     ##Rub ##SetTo ##WaveHands ##Buy ##Climb ##Sleep ##Quit ##Save
     ##Restore ##Restart ##Verify ##ScriptOn ##ScriptOff ##Version ##Score ##LMode3
-    ##LMode2 ##LMode1 ##NotifyOn ##NotifyOff ##Pronouns ##A77_reading ##A78_dialing_it_to;
+    ##LMode2 ##LMode1 ##NotifyOn ##NotifyOff ##Pronouns ##A77_reading ##A78_dialing_it_to ##A79_typing_it_into;
 
 
-Array ActionHappened --> 0 0 0 0 0;
+Array ActionHappened --> 0 0 0 0 0 0;
 
 
 [ InvSub ;
@@ -11976,6 +11978,9 @@ Array ActionHappened --> 0 0 0 0 0;
 ];
 [ A78_dialing_it_toSub ;
     return GenericVerbSub(365,366,367);
+];
+[ A79_typing_it_intoSub ;
+    return GenericVerbSub(368,369,370);
 ];
 
 [ MistakeActionSub ;
@@ -12626,12 +12631,12 @@ Array ActionHappened --> 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! Rules in rulebook: After (B23_after)
 ! ----------------------------------------------------------------------------------------------------
-! Rule 1/1 ! After dialing the code dial to 004000001:
+! Rule 1/1 ! After typing 004000001 into the code dial:
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
-! After dialing the code dial to 004000001:
+! After typing 004000001 into the code dial:
 [ R_804 ;
-    if ((((action ==##A78_dialing_it_to) &&  (actor==player) && ((noun == I135_code_dial) && (true)) && ((parsed_number == 4000001) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##A79_typing_it_into) &&  (actor==player) && ((parsed_number == 4000001) && (true)) && ((second == I135_code_dial) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_804, 804);
     ! [2: now the shuttle bay hatch is unlocked]
@@ -15647,17 +15652,17 @@ Array ActionHappened --> 0 0 0 0 0;
     {! [3: if the player is the actor]
         if (((player == actor)))
         {! [4: if the player's command includes ~stand~]
-            if (((matched_text=SnippetIncludes(Consult_Grammar_99,players_command))))
+            if (((matched_text=SnippetIncludes(Consult_Grammar_100,players_command))))
             {! [5: say ~[regarding the noun][They're] not something [we] [can] stand on.~ ( a )]
                 say__p=1;! [6: ~[regarding the noun][They're] not something [we] [can] stand on.~ ( a )]
                 ParaContent(); print (TEXT_TY_Say) (TX_R_223); new_line; .L_Say112; .L_SayX112;} else {
                 ! [7: if the player's command includes ~sit~]
-                if (((matched_text=SnippetIncludes(Consult_Grammar_100,players_command))))
+                if (((matched_text=SnippetIncludes(Consult_Grammar_101,players_command))))
                 {! [8: say ~[regarding the noun][They're] not something [we] [can] sit down on.~ ( b )]
                     say__p=1;! [9: ~[regarding the noun][They're] not something [we] [can] sit down on.~ ( b )]
                     ParaContent(); print (TEXT_TY_Say) (TX_R_224); new_line; .L_Say113; .L_SayX113;} else {
                     ! [10: if the player's command includes ~lie~]
-                    if (((matched_text=SnippetIncludes(Consult_Grammar_101,players_command))))
+                    if (((matched_text=SnippetIncludes(Consult_Grammar_102,players_command))))
                     {! [11: say ~[regarding the noun][They're] not something [we] [can] lie down on.~ ( c )]
                         say__p=1;! [12: ~[regarding the noun][They're] not something [we] [can] lie down on.~ ( c )]
                         ParaContent(); print (TEXT_TY_Say) (TX_R_225); new_line; .L_Say114; .L_SayX114;} else {
@@ -21475,7 +21480,7 @@ Array TimedEventTimesTable table 0 0;
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 
-Array rulebooks_array --> B0_startup B1_turn_sequence B2_shutdown B3_scene_changing B4_when_play_begins B5_when_play_ends B6_when_scene_begins B7_when_scene_ends B8_every_turn B9_action_processing B10_setting_action_variables B11_specific_action_processi B12_player_s_action_awarenes B13_accessibility B14_reaching_inside B15_reaching_outside B16_visibility B17_persuasion B18_unsuccessful_attempt_by B19_before B20_instead B21_check B22_carry_out B23_after B24_report B25_does_the_player_mean B26_multiple_action_processi B27_when_entire_game_begins B28_when_entire_game_ends B29_before_printing_the_name B30_for_printing_the_name B31_after_printing_the_name B32_before_printing_the_plur B33_for_printing_the_plural_ B34_after_printing_the_plura B35_before_printing_a_number B36_for_printing_a_number B37_after_printing_a_number B38_before_printing_room_des B39_for_printing_room_descri B40_after_printing_room_desc B41_before_printing_inventor B42_for_printing_inventory_d B43_after_printing_inventory B44_before_listing_contents B45_for_listing_contents B46_after_listing_contents B47_before_grouping_together B48_for_grouping_together B49_after_grouping_together B50_before_writing_a_paragra B51_for_writing_a_paragraph_ B52_after_writing_a_paragrap B53_before_listing_nondescri B54_for_listing_nondescript_ B55_after_listing_nondescrip B56_before_printing_the_name B57_for_printing_the_name_of B58_after_printing_the_name_ B59_before_printing_the_desc B60_for_printing_the_descrip B61_after_printing_the_descr B62_before_printing_the_anno B63_for_printing_the_announc B64_after_printing_the_annou B65_before_printing_the_anno B66_for_printing_the_announc B67_after_printing_the_annou B68_before_printing_a_refusa B69_for_printing_a_refusal_t B70_after_printing_a_refusal B71_before_constructing_the_ B72_for_constructing_the_sta B73_after_constructing_the_s B74_before_printing_the_bann B75_for_printing_the_banner_ B76_after_printing_the_banne B77_before_reading_a_command B78_for_reading_a_command B79_after_reading_a_command B80_before_deciding_the_scop B81_for_deciding_the_scope B82_after_deciding_the_scope B83_before_deciding_the_conc B84_for_deciding_the_conceal B85_after_deciding_the_conce B86_before_deciding_whether_ B87_for_deciding_whether_all B88_after_deciding_whether_a B89_before_clarifying_the_pa B90_for_clarifying_the_parse B91_after_clarifying_the_par B92_before_asking_which_do_y B93_for_asking_which_do_you_ B94_after_asking_which_do_yo B95_before_printing_a_parser B96_for_printing_a_parser_er B97_after_printing_a_parser_ B98_before_supplying_a_missi B99_for_supplying_a_missing_ B100_after_supplying_a_missi B101_before_supplying_a_miss B102_for_supplying_a_missing B103_after_supplying_a_missi B104_before_implicitly_takin B105_for_implicitly_taking B106_after_implicitly_taking B107_before_starting_the_vir B108_for_starting_the_virtua B109_after_starting_the_virt B110_before_amusing_a_victor B111_for_amusing_a_victoriou B112_after_amusing_a_victori B113_before_printing_the_pla B114_for_printing_the_player B115_after_printing_the_play B116_before_handling_the_fin B117_for_handling_the_final_ B118_after_handling_the_fina B119_before_printing_the_loc B120_for_printing_the_locale B121_after_printing_the_loca B122_before_choosing_notable B123_for_choosing_notable_lo B124_after_choosing_notable_ B125_before_printing_a_local B126_for_printing_a_locale_p B127_after_printing_a_locale B128_before_issuing_the_resp B129_for_issuing_the_respons B130_after_issuing_the_respo B131_check_taking_inventory B132_carry_out_taking_invent B133_report_taking_inventory B134_check_taking B135_carry_out_taking B136_report_taking B137_check_removing_it_from B138_carry_out_removing_it_f B139_report_removing_it_from B140_check_dropping B141_carry_out_dropping B142_report_dropping B143_check_putting_it_on B144_carry_out_putting_it_on B145_report_putting_it_on B146_check_inserting_it_into B147_carry_out_inserting_it_ B148_report_inserting_it_int B149_check_eating B150_carry_out_eating B151_report_eating B152_check_going B153_carry_out_going B154_report_going B155_check_entering B156_carry_out_entering B157_report_entering B158_check_exiting B159_carry_out_exiting B160_report_exiting B161_check_getting_off B162_carry_out_getting_off B163_report_getting_off B164_check_looking B165_carry_out_looking B166_report_looking B167_check_examining B168_carry_out_examining B169_report_examining B170_check_looking_under B171_carry_out_looking_under B172_report_looking_under B173_check_searching B174_carry_out_searching B175_report_searching B176_check_consulting_it_abo B177_carry_out_consulting_it B178_report_consulting_it_ab B179_check_locking_it_with B180_carry_out_locking_it_wi B181_report_locking_it_with B182_check_unlocking_it_with B183_carry_out_unlocking_it_ B184_report_unlocking_it_wit B185_check_switching_on B186_carry_out_switching_on B187_report_switching_on B188_check_switching_off B189_carry_out_switching_off B190_report_switching_off B191_check_opening B192_carry_out_opening B193_report_opening B194_check_closing B195_carry_out_closing B196_report_closing B197_check_wearing B198_carry_out_wearing B199_report_wearing B200_check_taking_off B201_carry_out_taking_off B202_report_taking_off B203_check_giving_it_to B204_carry_out_giving_it_to B205_report_giving_it_to B206_check_showing_it_to B207_carry_out_showing_it_to B208_report_showing_it_to B209_check_waking B210_carry_out_waking B211_report_waking B212_check_throwing_it_at B213_carry_out_throwing_it_a B214_report_throwing_it_at B215_check_attacking B216_carry_out_attacking B217_report_attacking B218_check_kissing B219_carry_out_kissing B220_report_kissing B221_check_answering_it_that B222_carry_out_answering_it_ B223_report_answering_it_tha B224_check_telling_it_about B225_carry_out_telling_it_ab B226_report_telling_it_about B227_check_asking_it_about B228_carry_out_asking_it_abo B229_report_asking_it_about B230_check_asking_it_for B231_carry_out_asking_it_for B232_report_asking_it_for B233_check_waiting B234_carry_out_waiting B235_report_waiting B236_check_touching B237_carry_out_touching B238_report_touching B239_check_waving B240_carry_out_waving B241_report_waving B242_check_pulling B243_carry_out_pulling B244_report_pulling B245_check_pushing B246_carry_out_pushing B247_report_pushing B248_check_turning B249_carry_out_turning B250_report_turning B251_check_pushing_it_to B252_carry_out_pushing_it_to B253_report_pushing_it_to B254_check_squeezing B255_carry_out_squeezing B256_report_squeezing B257_check_saying_yes B258_carry_out_saying_yes B259_report_saying_yes B260_check_saying_no B261_carry_out_saying_no B262_report_saying_no B263_check_burning B264_carry_out_burning B265_report_burning B266_check_waking_up B267_carry_out_waking_up B268_report_waking_up B269_check_thinking B270_carry_out_thinking B271_report_thinking B272_check_smelling B273_carry_out_smelling B274_report_smelling B275_check_listening_to B276_carry_out_listening_to B277_report_listening_to B278_check_tasting B279_carry_out_tasting B280_report_tasting B281_check_cutting B282_carry_out_cutting B283_report_cutting B284_check_jumping B285_carry_out_jumping B286_report_jumping B287_check_tying_it_to B288_carry_out_tying_it_to B289_report_tying_it_to B290_check_drinking B291_carry_out_drinking B292_report_drinking B293_check_saying_sorry B294_carry_out_saying_sorry B295_report_saying_sorry B296_check_swinging B297_carry_out_swinging B298_report_swinging B299_check_rubbing B300_carry_out_rubbing B301_report_rubbing B302_check_setting_it_to B303_carry_out_setting_it_to B304_report_setting_it_to B305_check_waving_hands B306_carry_out_waving_hands B307_report_waving_hands B308_check_buying B309_carry_out_buying B310_report_buying B311_check_climbing B312_carry_out_climbing B313_report_climbing B314_check_sleeping B315_carry_out_sleeping B316_report_sleeping B317_check_quitting_the_game B318_carry_out_quitting_the_ B319_report_quitting_the_gam B320_check_saving_the_game B321_carry_out_saving_the_ga B322_report_saving_the_game B323_check_restoring_the_gam B324_carry_out_restoring_the B325_report_restoring_the_ga B326_check_restarting_the_ga B327_carry_out_restarting_th B328_report_restarting_the_g B329_check_verifying_the_sto B330_carry_out_verifying_the B331_report_verifying_the_st B332_check_switching_the_sto B333_carry_out_switching_the B334_report_switching_the_st B335_check_switching_the_sto B336_carry_out_switching_the B337_report_switching_the_st B338_check_requesting_the_st B339_carry_out_requesting_th B340_report_requesting_the_s B341_check_requesting_the_sc B342_carry_out_requesting_th B343_report_requesting_the_s B344_check_preferring_abbrev B345_carry_out_preferring_ab B346_report_preferring_abbre B347_check_preferring_unabbr B348_carry_out_preferring_un B349_report_preferring_unabb B350_check_preferring_someti B351_carry_out_preferring_so B352_report_preferring_somet B353_check_switching_score_n B354_carry_out_switching_sco B355_report_switching_score_ B356_check_switching_score_n B357_carry_out_switching_sco B358_report_switching_score_ B359_check_requesting_the_pr B360_carry_out_requesting_th B361_report_requesting_the_p B362_check_reading B363_carry_out_reading B364_report_reading B365_check_dialing_it_to B366_carry_out_dialing_it_to B367_report_dialing_it_to 0;
+Array rulebooks_array --> B0_startup B1_turn_sequence B2_shutdown B3_scene_changing B4_when_play_begins B5_when_play_ends B6_when_scene_begins B7_when_scene_ends B8_every_turn B9_action_processing B10_setting_action_variables B11_specific_action_processi B12_player_s_action_awarenes B13_accessibility B14_reaching_inside B15_reaching_outside B16_visibility B17_persuasion B18_unsuccessful_attempt_by B19_before B20_instead B21_check B22_carry_out B23_after B24_report B25_does_the_player_mean B26_multiple_action_processi B27_when_entire_game_begins B28_when_entire_game_ends B29_before_printing_the_name B30_for_printing_the_name B31_after_printing_the_name B32_before_printing_the_plur B33_for_printing_the_plural_ B34_after_printing_the_plura B35_before_printing_a_number B36_for_printing_a_number B37_after_printing_a_number B38_before_printing_room_des B39_for_printing_room_descri B40_after_printing_room_desc B41_before_printing_inventor B42_for_printing_inventory_d B43_after_printing_inventory B44_before_listing_contents B45_for_listing_contents B46_after_listing_contents B47_before_grouping_together B48_for_grouping_together B49_after_grouping_together B50_before_writing_a_paragra B51_for_writing_a_paragraph_ B52_after_writing_a_paragrap B53_before_listing_nondescri B54_for_listing_nondescript_ B55_after_listing_nondescrip B56_before_printing_the_name B57_for_printing_the_name_of B58_after_printing_the_name_ B59_before_printing_the_desc B60_for_printing_the_descrip B61_after_printing_the_descr B62_before_printing_the_anno B63_for_printing_the_announc B64_after_printing_the_annou B65_before_printing_the_anno B66_for_printing_the_announc B67_after_printing_the_annou B68_before_printing_a_refusa B69_for_printing_a_refusal_t B70_after_printing_a_refusal B71_before_constructing_the_ B72_for_constructing_the_sta B73_after_constructing_the_s B74_before_printing_the_bann B75_for_printing_the_banner_ B76_after_printing_the_banne B77_before_reading_a_command B78_for_reading_a_command B79_after_reading_a_command B80_before_deciding_the_scop B81_for_deciding_the_scope B82_after_deciding_the_scope B83_before_deciding_the_conc B84_for_deciding_the_conceal B85_after_deciding_the_conce B86_before_deciding_whether_ B87_for_deciding_whether_all B88_after_deciding_whether_a B89_before_clarifying_the_pa B90_for_clarifying_the_parse B91_after_clarifying_the_par B92_before_asking_which_do_y B93_for_asking_which_do_you_ B94_after_asking_which_do_yo B95_before_printing_a_parser B96_for_printing_a_parser_er B97_after_printing_a_parser_ B98_before_supplying_a_missi B99_for_supplying_a_missing_ B100_after_supplying_a_missi B101_before_supplying_a_miss B102_for_supplying_a_missing B103_after_supplying_a_missi B104_before_implicitly_takin B105_for_implicitly_taking B106_after_implicitly_taking B107_before_starting_the_vir B108_for_starting_the_virtua B109_after_starting_the_virt B110_before_amusing_a_victor B111_for_amusing_a_victoriou B112_after_amusing_a_victori B113_before_printing_the_pla B114_for_printing_the_player B115_after_printing_the_play B116_before_handling_the_fin B117_for_handling_the_final_ B118_after_handling_the_fina B119_before_printing_the_loc B120_for_printing_the_locale B121_after_printing_the_loca B122_before_choosing_notable B123_for_choosing_notable_lo B124_after_choosing_notable_ B125_before_printing_a_local B126_for_printing_a_locale_p B127_after_printing_a_locale B128_before_issuing_the_resp B129_for_issuing_the_respons B130_after_issuing_the_respo B131_check_taking_inventory B132_carry_out_taking_invent B133_report_taking_inventory B134_check_taking B135_carry_out_taking B136_report_taking B137_check_removing_it_from B138_carry_out_removing_it_f B139_report_removing_it_from B140_check_dropping B141_carry_out_dropping B142_report_dropping B143_check_putting_it_on B144_carry_out_putting_it_on B145_report_putting_it_on B146_check_inserting_it_into B147_carry_out_inserting_it_ B148_report_inserting_it_int B149_check_eating B150_carry_out_eating B151_report_eating B152_check_going B153_carry_out_going B154_report_going B155_check_entering B156_carry_out_entering B157_report_entering B158_check_exiting B159_carry_out_exiting B160_report_exiting B161_check_getting_off B162_carry_out_getting_off B163_report_getting_off B164_check_looking B165_carry_out_looking B166_report_looking B167_check_examining B168_carry_out_examining B169_report_examining B170_check_looking_under B171_carry_out_looking_under B172_report_looking_under B173_check_searching B174_carry_out_searching B175_report_searching B176_check_consulting_it_abo B177_carry_out_consulting_it B178_report_consulting_it_ab B179_check_locking_it_with B180_carry_out_locking_it_wi B181_report_locking_it_with B182_check_unlocking_it_with B183_carry_out_unlocking_it_ B184_report_unlocking_it_wit B185_check_switching_on B186_carry_out_switching_on B187_report_switching_on B188_check_switching_off B189_carry_out_switching_off B190_report_switching_off B191_check_opening B192_carry_out_opening B193_report_opening B194_check_closing B195_carry_out_closing B196_report_closing B197_check_wearing B198_carry_out_wearing B199_report_wearing B200_check_taking_off B201_carry_out_taking_off B202_report_taking_off B203_check_giving_it_to B204_carry_out_giving_it_to B205_report_giving_it_to B206_check_showing_it_to B207_carry_out_showing_it_to B208_report_showing_it_to B209_check_waking B210_carry_out_waking B211_report_waking B212_check_throwing_it_at B213_carry_out_throwing_it_a B214_report_throwing_it_at B215_check_attacking B216_carry_out_attacking B217_report_attacking B218_check_kissing B219_carry_out_kissing B220_report_kissing B221_check_answering_it_that B222_carry_out_answering_it_ B223_report_answering_it_tha B224_check_telling_it_about B225_carry_out_telling_it_ab B226_report_telling_it_about B227_check_asking_it_about B228_carry_out_asking_it_abo B229_report_asking_it_about B230_check_asking_it_for B231_carry_out_asking_it_for B232_report_asking_it_for B233_check_waiting B234_carry_out_waiting B235_report_waiting B236_check_touching B237_carry_out_touching B238_report_touching B239_check_waving B240_carry_out_waving B241_report_waving B242_check_pulling B243_carry_out_pulling B244_report_pulling B245_check_pushing B246_carry_out_pushing B247_report_pushing B248_check_turning B249_carry_out_turning B250_report_turning B251_check_pushing_it_to B252_carry_out_pushing_it_to B253_report_pushing_it_to B254_check_squeezing B255_carry_out_squeezing B256_report_squeezing B257_check_saying_yes B258_carry_out_saying_yes B259_report_saying_yes B260_check_saying_no B261_carry_out_saying_no B262_report_saying_no B263_check_burning B264_carry_out_burning B265_report_burning B266_check_waking_up B267_carry_out_waking_up B268_report_waking_up B269_check_thinking B270_carry_out_thinking B271_report_thinking B272_check_smelling B273_carry_out_smelling B274_report_smelling B275_check_listening_to B276_carry_out_listening_to B277_report_listening_to B278_check_tasting B279_carry_out_tasting B280_report_tasting B281_check_cutting B282_carry_out_cutting B283_report_cutting B284_check_jumping B285_carry_out_jumping B286_report_jumping B287_check_tying_it_to B288_carry_out_tying_it_to B289_report_tying_it_to B290_check_drinking B291_carry_out_drinking B292_report_drinking B293_check_saying_sorry B294_carry_out_saying_sorry B295_report_saying_sorry B296_check_swinging B297_carry_out_swinging B298_report_swinging B299_check_rubbing B300_carry_out_rubbing B301_report_rubbing B302_check_setting_it_to B303_carry_out_setting_it_to B304_report_setting_it_to B305_check_waving_hands B306_carry_out_waving_hands B307_report_waving_hands B308_check_buying B309_carry_out_buying B310_report_buying B311_check_climbing B312_carry_out_climbing B313_report_climbing B314_check_sleeping B315_carry_out_sleeping B316_report_sleeping B317_check_quitting_the_game B318_carry_out_quitting_the_ B319_report_quitting_the_gam B320_check_saving_the_game B321_carry_out_saving_the_ga B322_report_saving_the_game B323_check_restoring_the_gam B324_carry_out_restoring_the B325_report_restoring_the_ga B326_check_restarting_the_ga B327_carry_out_restarting_th B328_report_restarting_the_g B329_check_verifying_the_sto B330_carry_out_verifying_the B331_report_verifying_the_st B332_check_switching_the_sto B333_carry_out_switching_the B334_report_switching_the_st B335_check_switching_the_sto B336_carry_out_switching_the B337_report_switching_the_st B338_check_requesting_the_st B339_carry_out_requesting_th B340_report_requesting_the_s B341_check_requesting_the_sc B342_carry_out_requesting_th B343_report_requesting_the_s B344_check_preferring_abbrev B345_carry_out_preferring_ab B346_report_preferring_abbre B347_check_preferring_unabbr B348_carry_out_preferring_un B349_report_preferring_unabb B350_check_preferring_someti B351_carry_out_preferring_so B352_report_preferring_somet B353_check_switching_score_n B354_carry_out_switching_sco B355_report_switching_score_ B356_check_switching_score_n B357_carry_out_switching_sco B358_report_switching_score_ B359_check_requesting_the_pr B360_carry_out_requesting_th B361_report_requesting_the_p B362_check_reading B363_carry_out_reading B364_report_reading B365_check_dialing_it_to B366_carry_out_dialing_it_to B367_report_dialing_it_to B368_check_typing_it_into B369_carry_out_typing_it_int B370_report_typing_it_into 0;
 
 [ EMPTY_RULEBOOK 
     forbid_breaks ! Implied call parameter
@@ -22066,7 +22071,7 @@ Constant B22_carry_out = EMPTY_RULEBOOK;
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
-    if (action == ##A78_dialing_it_to) {
+    if (action == ##A79_typing_it_into) {
         rv = R_804();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
@@ -25317,6 +25322,9 @@ Constant B366_carry_out_dialing_it_to = EMPTY_RULEBOOK;
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
+Constant B368_check_typing_it_into = EMPTY_RULEBOOK;
+Constant B369_carry_out_typing_it_int = EMPTY_RULEBOOK;
+Constant B370_report_typing_it_into = EMPTY_RULEBOOK;
 
 
 
@@ -26754,7 +26762,7 @@ Global MStack_Frame_Extent = 0;
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 #IFNDEF MEMORY_ECONOMY;
-Array rulebook_var_creators --> 0 0 0 0 0 0 0 0 0 RBSTVC_9 0 RBSTVC_11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+Array rulebook_var_creators --> 0 0 0 0 0 0 0 0 0 RBSTVC_9 0 RBSTVC_11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #endif;
 [  RBSTVC_9 
     pos ! Implied call parameter
@@ -29638,6 +29646,9 @@ Array RulebookNames -->
     "check Dialing it to rulebook" ! 365
     "carry out Dialing it to rulebook" ! 366
     "report Dialing it to rulebook" ! 367
+    "check Typing it into rulebook" ! 368
+    "carry out Typing it into rulebook" ! 369
+    "report Typing it into rulebook" ! 370
 ;
 
 
@@ -30001,7 +30012,7 @@ Array RulebookNames -->
         if (R == R_801) { print "Report reading"; rtrue; } ! rule 350
         if (R == R_802) { print "Check dialing it to"; rtrue; } ! rule 351
         if (R == R_803) { print "Report dialing it to"; rtrue; } ! rule 352
-        if (R == R_804) { print "After dialing the code dial to 004000001"; rtrue; } ! rule 353
+        if (R == R_804) { print "After typing 004000001 into the code dial"; rtrue; } ! rule 353
 
 		print "(nameless rule at address ", R, ")";
 	}
@@ -36240,6 +36251,10 @@ Array TestText_0 ->
     "n/w/dial code dial to 123/w/dial code dial to 472/w||||";
 Array TestReq_0 -->
     0 0;
+Array TestText_1 ->
+    "n/w/x dial||||";
+Array TestReq_1 -->
+    0 0;
 
 
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
@@ -36702,15 +36717,17 @@ if (t_0 ofclass K18_book) {if (na > 0) { na = 0; print "^"; }
 ! Tests.i6t: Test Command
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-#Iftrue (1 > 0);
+#Iftrue (2 > 0);
 
 [ TestScriptSub;
 	switch(special_word) {
 'me//': TestStart(TestText_0, TestReq_0, 51);
+'typing//': TestStart(TestText_1, TestReq_1, 10);
 
 	default:
 		print ">--> The following tests are available:^";
 print "'test me'^";
+print "'test typing'^";
 
 	}
 ];
@@ -37035,7 +37052,7 @@ Verb meta 'tree'
     ;
     ! [2: let x be given by x = r@@94@{32} where x is a real number]
 
-    		! Solving Q0_german for '$w'
+    		! Solving Q0_french for '$w'
     (tmp_0 = (REAL_NUMBER_TY_Pow(t_0, NUMBER_TY_to_REAL_NUMBER_TY(2))));
     ;
     ! [3: decide on x]
@@ -37051,7 +37068,7 @@ Verb meta 'tree'
     ;
     ! [2: let x be given by x = log ( r + root ( r@@94@{32} + 1 ) ) where x is a real number]
 
-    		! Solving Q1_german for '$w'
+    		! Solving Q1_french for '$w'
     (tmp_0 = (REAL_NUMBER_TY_Log((REAL_NUMBER_TY_Plus(t_0, (REAL_NUMBER_TY_Root((REAL_NUMBER_TY_Plus((REAL_NUMBER_TY_Pow(t_0, NUMBER_TY_to_REAL_NUMBER_TY(2))), NUMBER_TY_to_REAL_NUMBER_TY(1))))))))));
     ;
     ! [3: decide on x]
@@ -37067,7 +37084,7 @@ Verb meta 'tree'
     ;
     ! [2: let x be given by x = log ( r + root ( r@@94@{32} - 1 ) ) where x is a real number]
 
-    		! Solving Q2_german for '$w'
+    		! Solving Q2_french for '$w'
     (tmp_0 = (REAL_NUMBER_TY_Log((REAL_NUMBER_TY_Plus(t_0, (REAL_NUMBER_TY_Root((REAL_NUMBER_TY_Minus((REAL_NUMBER_TY_Pow(t_0, NUMBER_TY_to_REAL_NUMBER_TY(2))), NUMBER_TY_to_REAL_NUMBER_TY(1))))))))));
     ;
     ! [3: decide on x]
@@ -37083,7 +37100,7 @@ Verb meta 'tree'
     ;
     ! [2: let x be given by x = 0.5* ( log ( 1+r ) - log ( 1-r ) ) where x is a real number]
 
-    		! Solving Q3_german for '$w'
+    		! Solving Q3_french for '$w'
     (tmp_0 = (REAL_NUMBER_TY_Times(1056964608, (REAL_NUMBER_TY_Minus((REAL_NUMBER_TY_Log((REAL_NUMBER_TY_Plus(NUMBER_TY_to_REAL_NUMBER_TY(1), t_0)))), (REAL_NUMBER_TY_Log((REAL_NUMBER_TY_Minus(NUMBER_TY_to_REAL_NUMBER_TY(1), t_0)))))))));
     ;
     ! [3: decide on x]
@@ -47980,6 +47997,18 @@ Array Rel_Record_69 -->
     }
     return v;
 ];
+[ Noun_Filter_5 
+    v ! value parsed
+    n ! saved value of noun
+    ;
+    v = DECIMAL_TOKEN();
+    if (v == GPR_NUMBER) {
+        n = noun; noun = parsed_number;
+        if (~~(((true) && (true)))) v = GPR_FAIL;
+        noun = n;
+    }
+    return v;
+];
 
 
 
@@ -48852,7 +48881,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Consult_Grammar_94 
+[ Consult_Grammar_95 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -48872,7 +48901,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_95 
+[ Consult_Grammar_96 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -48892,7 +48921,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_96 
+[ Consult_Grammar_97 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -48912,7 +48941,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_97 
+[ Consult_Grammar_98 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -48932,7 +48961,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_98 
+[ Consult_Grammar_99 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -48952,7 +48981,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_99 
+[ Consult_Grammar_100 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -48972,7 +49001,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_100 
+[ Consult_Grammar_101 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -48992,7 +49021,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_101 
+[ Consult_Grammar_102 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -49315,6 +49344,9 @@ Verb 'notify'
 ;
 Verb 'dial'
     * noun 'to' DECIMAL_TOKEN  -> A78_dialing_it_to
+;
+Verb 'type'
+    * DECIMAL_TOKEN 'into' noun  -> A79_typing_it_into
 ;
 
 
