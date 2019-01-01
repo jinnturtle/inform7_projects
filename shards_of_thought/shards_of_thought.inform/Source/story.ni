@@ -27,11 +27,6 @@ Carry out reading: say "You read: [printing of the noun][line break]".
 Report reading: do nothing.
 Understand "read [something]" as reading.
 
-Dialing it to is an action applying to one thing and one number.
-Check dialing it to: if the noun is not the code dial, say "Impossible, there are no keys on [the noun]." instead.
-Report dialing it to: say "[The noun] beeps as you press the keys.[line break]".
-Understand "Dial [something] to [a number]" as dialing it to.
-
 Understand the command "type" as something new.
 Typing it into is an action applying to one number and one thing.
 Report typing it into: do nothing.
