@@ -6,19 +6,40 @@
 
 Volume I - The Unseen
 
-Book I - Things
+Book I - Kinds of Things
 
 An indicator light is a kind of thing. An indicator light has some text called colour. The colour of an indicator light is usually "red".
+
+A codelock is a kind of thing.
+A codelock has some text called the password. The password is usually "admin".
+A codelock can be locked or unlocked. A codelock is usually locked.
 
 A lever is a kind of thing. A lever can be raised or lowered. A lever is usually raised.
 
 A book is a kind of thing. A book has some text called printing. The printing of a book is usually "blank".
 
-Book II - Properties
+Book II - Activities
 
-[A thing has some text called printing. The printing of a thing is usually "blank".]
-
-Book III - Activities
+Inputting a password into something is an action applying to one thing and one topic.
+Check inputting a password into something: do nothing.
+Carry out Inputting a password into something:
+    if the noun is a codelock begin;
+        say "You input the password '[topic understood]'.";
+        let input be ""; now input is the topic understood;
+        if input is the password of the noun begin;
+            say "Correct! - the [noun] unlocks.";
+            now the noun is unlocked;
+        [even if a codelock was unlocked, it will lock if the wrong password is entered]
+        otherwise if the noun is unlocked;
+            say "Wrong password - the previously unlocked [noun] now locks.";
+            now the noun is locked;
+        otherwise;
+            say "Seems to be the wrong password";
+        end if; 
+    end if;
+Report inputting a password into something: do nothing.
+Understand "Input [text] into [codelock]" as Inputting a password into something (with nouns reversed).
+[try to implement "input code ..." as well]
 
 Understand the command "read" as something new.
 Reading is an action applying to one thing, requiring light.
@@ -49,12 +70,9 @@ The bookshelf is a container in Cabin E. It is fixed in place.
 
 Intersection E is north of hatch E-E. "A small square room with hatches on all six of it's walls." Hatch E-E is north of Cabin E and south of Intersection E. 
 Hatch E-E is a door. It is closed.
-Code dial is a thing in the Intersection E.
-After typing 004000001 into the code dial:
-    now the shuttle bay hatch is unlocked;
-    now the colour of dock E indicator is "green";
-    say "A green light on the thing suggests that something happened."
-Dock E hatch indicator is in the intersection E. Dock E hatch indicator is an indicator light. Description of the indicator light is "The indicator light is currently [colour]."
+The maglock is a codelock in Intersection E. The description of the maglock is "It is [if locked]locked[else]unlocked[end if]. DEV: code is [password]."
+
+Test maglock with "n / x maglock / input wrong code into maglock / x maglock / input admin into maglock / x maglock / input badmin into maglock / x maglock"
 
 Shuttle Bay 5 is west of the shuttle bay hatch. "A closed spherical compartment, about two and a half metres across. With the exception of a few little bundles of electronics the white walls of the sphere are perfectly bare." Shuttle bay hatch is west of Intersection E.
 Shuttle bay hatch is a door. It is closed and lockable and locked.
