@@ -1,8 +1,8 @@
 "shards_of_thought" by "Egidijus".
 
-[TODO - separate source parts into volumes, books, chapters, etc]
+Volume 0 - Releasing
 
-[TODO - maybe should make a type of thing called book instead of adding the printing variable to all things]
+Index map with room-shape set to "square" and room-size set to 60 and room-name-size set to 6 and room-name-length set to 16 and route-thickness set to 1 and room-outline set to on and map-outline set to on and route-colour set to "Black" and room-colour set to "White" and font set to "sans-serif" and EPS file.
 
 Volume I - The Unseen
 
@@ -13,8 +13,6 @@ An indicator light is a kind of thing. An indicator light has some text called c
 A codelock is a kind of thing.
 A codelock has some text called the password. The password is usually "admin".
 A codelock can be locked or unlocked. A codelock is usually locked.
-
-A lever is a kind of thing. A lever can be raised or lowered. A lever is usually raised.
 
 A book is a kind of thing. A book has some text called printing. The printing of a book is usually "blank".
 
@@ -62,6 +60,8 @@ Volume II - The Seen
 
 Book I - The Space Station (Act I)
 
+The player carries a small note.  The description of the small note is "The [noun] is written in elegant hand, the writing says: 'The address is Arcoloy 5, section 23-12, quarters 27-44-73 - Green City - Planet Thaulurnon'".
+
 Cabin E is a room. "A white, cyllindrical room with a circular window at one end and a hatch-like door at the other, quite fitting of a space station compartment."
 A round window is here. Description of the round window is "Much of the view through the window is occupied by a black sphere, it is patterned with luminous circles and lines of pale green light, some of the circles are concentric - especially around what seems to be a cenetral area in the pattern - and some are unfinished, there are also some dots and streaks of yellowish coloration. Throughout the glowing pattern the intencity of illumination varies as if the entire thing is made of thousands of tiny lights, it may be a giant, greenish, concentric, city if the sphere is a planet. The sphere is surrounded by stars, it does look like a planet."
 The bookshelf is a container in Cabin E. It is fixed in place.
@@ -74,6 +74,8 @@ The maglock is a codelock in Intersection E. The description of the maglock is "
 
 Test maglock with "n / x maglock / input wrong code into maglock / x maglock / input admin into maglock / x maglock / input badmin into maglock / x maglock"
 
-Shuttle Bay 5 is west of the shuttle bay hatch. "A closed spherical compartment, about two and a half metres across. With the exception of a few little bundles of electronics the white walls of the sphere are perfectly bare." Shuttle bay hatch is west of Intersection E.
-Shuttle bay hatch is a door. It is closed and lockable and locked.
-Launch lever is a lever in the Shuttle Bay 5.
+Waiting Area 5 is west of the Waiting Area 5 hatch.
+Waiting Area 5 hatch is west of Intersection E. Waiting Area 5 hatch is a door. It is closed and lockable and locked.
+
+The Shuttle is west of Docking Hatch E5. "A closed spherical compartment, about two and a half metres across. With the exception of a few little bundles of electronics the white walls of the sphere are perfectly bare."
+Docking Hatch E5 is a door. Docking Hatch E5 is west of Waiting Area 5.
