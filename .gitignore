@@ -4,6 +4,7 @@
 */*/Build
 */*/Index
 */*.materials/Release
+*/*.materials/Inform\ Map.eps
 .materials
 gameinfo.dbg
 manifest.plist
