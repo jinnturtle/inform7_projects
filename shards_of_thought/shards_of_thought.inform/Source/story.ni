@@ -59,6 +59,9 @@ Book 0 - The Void
 The Wanderers Journals Part III is a book.
 The printing of the Wanderers Journals Part III is "One glimpses full happiness only when one gazes beyond oneself, into the lives of others and into the decades, centuries and millenia that extend far past ones own lifetime. A letter carried in the hearts of those that one touches and the effects of ones life reverberating down the strings of time through the ages to come. Will humankind remember a kind man that brings warmth, hope and reason, or a man that eats tha final light of a dying day? The less temporal the fundament of ones goal is, the fuller and longer ones happiness is that is brought about by progress ones goal. And none is known to last longer that the power that created time, as that which existed before time is not bound by time. Thus a goal that transcends time is a goal that brings complete happines and self-realization as understood by beings bound by time if said beings realize what kind of goal they are working towards."
 
+The Shadow Terminus is a room. "The place where trains depart into the worlds of thought."
+The malevolent shadow is a person in the Shadow Terminus. "You feel the form-less figure bow in a greeting and smile amicably, you are not sure how you sense this but you are quite certain that you do."
+
 Book I - The Space Station (Act I)
 
 The player carries a small note.  The description of the small note is "The [noun] is written in elegant hand, the writing says: 'The address is Arcology 5, district 23, section 12, quarters 27-44-73 - Green City - Planet Thaulurnon'".
