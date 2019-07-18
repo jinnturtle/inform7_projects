@@ -2,11 +2,17 @@
 
 Volume Releasing
 
-Index map with room-shape set to "square" and room-size set to 60 and
-room-name-size set to 6 and room-name-length set to 16 and route-thickness set
-to 1 and room-outline set to on and map-outline set to on and route-colour set
-to "Black" and room-colour set to "White" and font set to "sans-serif" and EPS
-file.
+Index map with room-shape set to "square"
+and room-size set to 60
+and room-name-size set to 6
+and room-name-length set to 16
+and route-thickness set to 1
+and room-outline set to on
+and map-outline set to on
+and route-colour set to "Black"
+and room-colour set to "White"
+and font set to "sans-serif"
+and EPS file.
 
 Volume The Unseen
 
@@ -41,7 +47,8 @@ Carry out Inputting a password into something:
             now the controllable of the noun is unlocked;
             say "Correct! - the [the controllable of the noun] unlocks.";
         [even if a codelock was unlocked, it will lock if the wrong password is entered]
-        otherwise if the controllable of the noun is unlocked and the controllable of the noun is closed;
+        otherwise if the controllable of the noun is unlocked and the
+        controllable of the noun is closed;
             say "Wrong password - the previously unlocked [controllable of the noun] now locks.";
             now the controllable of the noun is locked;
         otherwise;
@@ -57,6 +64,16 @@ Part book
 A book is a kind of thing. A book has some text called printing. The printing
 of a book is usually "blank".
 
+Part linkbook
+
+Chapter declaration
+
+A linkbook is a kind of thing. A linkbook has a room called linked_room.
+
+Chapter implementation
+
+instead of touching a linkbook: now the player is in the linked_room of the noun.
+
 Book General Activities
 
 Part Reading
@@ -64,7 +81,8 @@ Part Reading
 Understand the command "read" as something new.
 Reading is an action applying to one thing, requiring light.
 Check reading:
-    if the printing of the noun is "blank", say "Nothing is writen in [the noun]." instead.
+    if the printing of the noun is "blank", say "Nothing is writen in
+    [the noun]." instead.
 Carry out reading: say "You read: [printing of the noun][line break]".
 Report reading: do nothing.
 Understand "read [something]" as reading.
@@ -74,6 +92,10 @@ Book Spacetime Laws (time, gravity, etc)
 [TODO - gravity, time (day-night cycle e.g. in orbit of the green planet)]
 
 Volume The Seen
+
+When play begins now the player is in Writers Study.
+
+[When play begins now the player is in Cabin E.]
 
 Book The Void
 
@@ -104,7 +126,10 @@ The Writers Study is a room. "The smell of wood, leather, and paper."
 The writers note is in the Writers Study. Description of the writers note is "
 You don't write for success. That takes part of your attention away from the
 writing. If you're really doing it, that's all you're doing: writing. (Herbert
-Frank)"
+Frank)".
+The jnanin_linkbook is a linkbook in the Writers Study. Printed name is "book
+of Jnanin". Linked_room is Cabin E.
+Understand "jnanin", "Jnanin", "green book" as jnanin_linkbook.
 
 Book I - The Space Station
 
