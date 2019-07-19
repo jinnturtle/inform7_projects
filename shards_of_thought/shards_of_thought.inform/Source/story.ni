@@ -14,6 +14,8 @@ and room-colour set to "White"
 and font set to "sans-serif"
 and EPS file.
 
+When play begins, now the player is in room_writers_study.
+
 Volume The Unseen
 
 Book Kinds of Things
@@ -64,6 +66,11 @@ Part book
 A book is a kind of thing. A book has some text called printing. The printing
 of a book is usually "blank".
 
+Part note
+
+A note is a kind of thing. A note has some text called printing. The printing of
+a note is usually "blank".
+
 Part linkbook
 
 Chapter declaration
@@ -81,7 +88,7 @@ Part Reading
 Understand the command "read" as something new.
 Reading is an action applying to one thing, requiring light.
 Check reading:
-    if the printing of the noun is "blank", say "Nothing is writen in
+    if the printing of the noun is "blank", say "Nothing is written in
     [the noun]." instead.
 Carry out reading: say "You read: [printing of the noun][line break]".
 Report reading: do nothing.
@@ -93,9 +100,6 @@ Book Spacetime Laws (time, gravity, etc)
 
 Volume The Seen
 
-When play begins now the player is in Writers Study.
-
-[When play begins now the player is in Cabin E.]
 
 Book The Void
 
@@ -122,16 +126,71 @@ The benevolent shadow is a person in the Shadow Terminus. "You feel the
 form-less figure bow in a greeting and smile amicably, you are not sure how you
 sense this but you are quite certain that you do."
 
-The Writers Study is a room. "The smell of wood, leather, and paper."
-The writers note is in the Writers Study. Description of the writers note is "
-You don't write for success. That takes part of your attention away from the
-writing. If you're really doing it, that's all you're doing: writing. (Herbert
-Frank)".
-The jnanin_linkbook is a linkbook in the Writers Study. Printed name is "book
-of Jnanin". Linked_room is Cabin E.
-Understand "jnanin", "Jnanin", "green book" as jnanin_linkbook.
+Book The Gallery of Worlds
 
-Book I - The Space Station
+Part Writer's Study
+
+The room_writers_study is a room. "The smell of wood, leather, and paper."
+Printed name of room_writers_study is "Writer's Study".
+The writer's desk is a supporter in the room_writers_study.
+Description of the writer's desk is "A large and spaceous wooden table. Rather
+regal, probably made of redwood, or similar. It is looked after and in good
+repair, but obviously seen decades of use.  It has two drawers right below the
+desk surface, one on the left side and one on the right."
+The left drawer and the right drawer are part of the writer's desk.
+The left drawer and the right drawer are openable closed containers.
+Instead of opening the left drawer:
+    Say "The wood hisses gently, as the drawer slides open.";
+    Now the noun is open.
+Instead of opening the right drawer:
+    Say "The wood hisses gently, as the drawer slides open.";
+    Now the noun is open.
+
+The dont_write_for_success_note is in the left drawer.
+Printed name of dont_write_for_success_note is "old note".
+Understand "old note", "writer's note", "yellow note" as
+dont_write_for_success_note.
+Description of the dont_write_for_success_note is "The paper is high grade, but
+obviously quite old and yellowed. On it is written in a calligraphic hand: 'You
+don't write for success. That takes part of your attention away from the
+writing. If you're really doing it, that's all you're doing: writing.' (Herbert
+Frank)".
+
+The welcome_note is a note on the writer's desk.
+Printed name of welcome_note is "large note".
+Understand "large note", "welcome note", "note" as the welcome_note.
+Description of the welcome_note is "It is a relatively large sheet of high
+grade paper. The elegant writing reads '[printing]'".
+The printing of the welcome_note is "It seems you curiosity got the better of
+you and you have followed that enigmatic figure that dissapeared right around a
+dark corner, dropping a strange book in its wake. I did not intend for you to
+follow me, but I assumed you might, so I left this note for you to help you --
+at leas a little bit -- to navigate the quite surreal place you have gotten
+yourself into. You have followed in the footsteps of a creator of worlds, and
+you have stepped into a realm where time flows differently than you are used to
+and many rules of reality apply differently or not at all. I believe you will
+be quite fine, but I must warn you to be cautious, because there are some more
+dangerous places in this realm. I shall try to guide you away from harm, but I
+take no responsibility for your actions. As you are soon to realise this is all
+a work in progress, perfect in it's unfinished state, some places are more
+chaotic - allways evolving and changing, while others are still and serene.
+Even though you are trespassing, I mean you no harm and hope for your safe
+return home if you shall so wish. Maybe, though, after seeing the wonders of
+this realm, you shall wish to pick up the art. Somewhere around here should be
+another of those strange books, it should be green and titled 'Jnanin', it is
+what is called a linking book, you can travel to another world by touching it's
+front page with your palm and whishing yourself in.  Hopefully our paths will
+cross again. Good luck and have a safe journey."
+After examining the welcome_note:
+    Now the printed name of welcome_note is "welcome note".
+
+The jnanin_linkbook is a linkbook in the right drawer.
+Description of jnanin_linkbook is "The cover is wrapped in dark green fabric, on which -- inset in bold gold letters -- is the name 'Jnanin'."
+Printed name is "book of Jnanin".
+Understand "jnanin", "Jnanin", "green book" as jnanin_linkbook.
+Linked_room of jnanin_linkbook is Cabin E.
+
+Book The Space Station
 
 The player carries a small note.
 The description of the small note is "The
