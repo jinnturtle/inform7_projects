@@ -106,19 +106,19 @@ Book The Void
 [Here are things that do not have a place yet]
 
 The Wanderers Journals Part III is a book.
-The printing of the Wanderers Journals Part III is "One glimpses full happiness
-only when one gazes beyond oneself, into the lives of others and into the
-decades, centuries and millenia that extend far past ones own lifetime. A
-letter carried in the hearts of those that one touches and the effects of ones
-life reverberating down the strings of time through the ages to come. Will
-humankind remember a kind man that brings warmth, hope and reason, or a man
-that eats tha final light of a dying day? The less temporal the fundament of
-ones goal is, the fuller and longer ones happiness is that is brought about by
-progress ones goal. And none is known to last longer that the power that
-created time, as that which existed before time is not bound by time. Thus a
-goal that transcends time is a goal that brings complete happines and
-self-realization as understood by beings bound by time if said beings realize
-what kind of goal they are working towards."
+The printing of the Wanderers Journals Part III is "One glimpses happiness in
+its fulness only when one gazes deep beyond oneself, into the lives of others,
+into the world and into the decades, centuries and millenia that extend far
+past ones own lifetime. A letter carried in the hearts of those who one touches
+and the effects of ones every action reverberating down the strings of time
+through the ages to come. Humankind will quickly forget, but the world will
+always remember. This legacy, will it be kindness bringing warmth, hope and
+reason, or an ever-hungry shadow that eats tha final light of a dying day? The
+less temporal the fundament of a goal is, the longer and fuller is the
+happiness brought about by progress. Nothing can last longer that the power
+that created time, as that which existed before time is not bound by it.  Thus
+a goal that transcends time is a goal that brings complete fulfilment -
+ultimate self-realization as can be understood by beings bound by time."
 
 The Shadow Terminus is a room. "The place where trains depart into the worlds
 of thought."
@@ -185,8 +185,9 @@ After examining the welcome_note:
     Now the printed name of welcome_note is "welcome note".
 
 The jnanin_linkbook is a linkbook in the right drawer.
-Description of jnanin_linkbook is "The cover is wrapped in dark green fabric, on which -- inset in bold gold letters -- is the name 'Jnanin'."
-Printed name is "book of Jnanin".
+Description of jnanin_linkbook is "The cover is wrapped in dark green fabric,
+on which -- inset in bold gold letters -- is the name 'Jnanin'."
+    Printed name is "book of Jnanin".
 Understand "jnanin", "Jnanin", "green book" as jnanin_linkbook.
 Linked_room of jnanin_linkbook is Cabin E.
 
