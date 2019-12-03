@@ -75,11 +75,16 @@ Part linkbook
 
 Chapter declaration
 
-A linkbook is a kind of thing. A linkbook has a room called linked_room.
+A linkbook is a kind of thing.
+    A linkbook has a room called linked_room.
+    A linkbook has some text called transition_text.
 
 Chapter implementation
 
-instead of touching a linkbook: now the player is in the linked_room of the noun.
+instead of touching a linkbook:
+    say transition_text of the noun;
+    say "[paragraph break]";
+    now the player is in the linked_room of the noun.
 
 Book General Activities
 
@@ -162,7 +167,7 @@ Understand "large note", "welcome note", "note" as the welcome_note.
 Description of the welcome_note is "It is a relatively large sheet of high
 grade paper. The elegant writing reads '[printing]'".
 The printing of the welcome_note is "It seems you curiosity got the better of
-you and you have followed that enigmatic figure that dissapeared right around a
+you and you have followed that enigmatic figure that disappeared right around a
 dark corner, dropping a strange book in its wake. I did not intend for you to
 follow me, but I assumed you might, so I left this note for you to help you --
 at leas a little bit -- to navigate the quite surreal place you have gotten
@@ -173,23 +178,31 @@ be quite fine, but I must warn you to be cautious, because there are some more
 dangerous places in this realm. I shall try to guide you away from harm, but I
 take no responsibility for your actions. As you are soon to realise this is all
 a work in progress, perfect in it's unfinished state, some places are more
-chaotic - allways evolving and changing, while others are still and serene.
+chaotic - always evolving and changing, while others are still and serene.
 Even though you are trespassing, I mean you no harm and hope for your safe
 return home if you shall so wish. Maybe, though, after seeing the wonders of
 this realm, you shall wish to pick up the art. Somewhere around here should be
 another of those strange books, it should be green and titled 'Jnanin', it is
 what is called a linking book, you can travel to another world by touching it's
-front page with your palm and whishing yourself in.  Hopefully our paths will
+front page with your palm and wishing yourself in. Hopefully our paths will
 cross again. Good luck and have a safe journey."
 After examining the welcome_note:
     Now the printed name of welcome_note is "welcome note".
 
 The jnanin_linkbook is a linkbook in the right drawer.
 Description of jnanin_linkbook is "The cover is wrapped in dark green fabric,
-on which -- inset in bold gold letters -- is the name 'Jnanin'."
+on which -- inset in bold gold letters -- is the name 'Jnanin'.[line break]
+One of the first pages contains an intricate diagram that converges into the
+shape of a palm, the diagram looks alive somehow. The rest of the book is
+filled with strange symbols."
     Printed name is "book of Jnanin".
 Understand "jnanin", "Jnanin", "green book" as jnanin_linkbook.
 Linked_room of jnanin_linkbook is Cabin E.
+Transition_text of jnanin_linkbook is "The sound of rushing wind fills your
+ears as you fall from the world and into the page. You are falling through
+darkness, you hear voices, unintelligible through the wind. The sensation
+disappears as suddenly as it began and your previous surroundings are replaced
+by a very different scene."
 
 Book The Space Station
 
