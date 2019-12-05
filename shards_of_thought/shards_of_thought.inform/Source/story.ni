@@ -197,12 +197,50 @@ shape of a palm, the diagram looks alive somehow. The rest of the book is
 filled with strange symbols."
     Printed name is "book of Jnanin".
 Understand "jnanin", "Jnanin", "green book" as jnanin_linkbook.
-Linked_room of jnanin_linkbook is Cabin E.
+Linked_room of jnanin_linkbook is Stone_platform.
 Transition_text of jnanin_linkbook is "The sound of rushing wind fills your
 ears as you fall from the world and into the page. You are falling through
 darkness, you hear voices, unintelligible through the wind. The sensation
 disappears as suddenly as it began and your previous surroundings are replaced
 by a very different scene."
+
+Book The Plateau
+
+[The stone stair, the ride puzzle]
+
+Stone_platform is a room.
+"A round stone platform with a beveled edge, circeled by oblong stepping
+stones. The wethered state of the platform breaths of ancient times.[line break]
+To the west, the cliff falls steeply into water and the wide panorama of sunlit
+sea is breathtakind.[line break]
+To the east, a stair of pale yellow stones winding up and disappearing
+behind the cliff."
+
+Book The Air Islands
+
+[The islands in the sky, the skyboat dock puzzle]
+
+Book The Haven
+
+Haven_beach is a room.
+"You stand on white sand in clear shallow water, the warm water washes over
+your feet in small soft waves. The water extends into the distance where it
+meets the sky.  Now the sky, most of it is occupied by a giant moon, or a
+planet -- it is patterned with luminous circles and lines of pale green light,
+some of the circles are concentric - mostly around a large cenetral area in the
+pattern which might be a giant city, some are unfinished, there are also some
+dots and streaks of yellow and orange. Part of the planet above meets the
+horizon, where it is then reflected by the ocean".
+
+Haven_pier is east of haven_beach.
+"A wooden bridge that extends from the white beach into the ocean."
+
+Haven_sandy_beach is south of haven_beach.
+
+Haven_hut is south of haven_sandy_beach.
+"A cozy wooden hut."
+
+[TODO - gazebo in area around hut]
 
 Book The Space Station
 
