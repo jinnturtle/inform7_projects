@@ -1,4 +1,4 @@
-"shards_of_thought" by "Egidijus".
+"shards_of_thought" by "Jinnturtle".
 
 Volume Releasing
 
@@ -110,35 +110,87 @@ Book The Void
 
 [Here are things that do not have a place yet]
 
-The Wanderers Journals Part III is a book.
-The printing of the Wanderers Journals Part III is "One glimpses happiness in
-its fulness only when one gazes deep beyond oneself, into the lives of others,
-into the world and into the decades, centuries and millenia that extend far
+The Wanderers Journal Part III is a book.
+The printing of the Wanderers Journal Part III is "One glimpses happiness in
+its fullness only when one gazes deep beyond oneself, into the lives of others,
+into the world and into the decades, centuries and millennia that extend far
 past ones own lifetime. A letter carried in the hearts of those who one touches
 and the effects of ones every action reverberating down the strings of time
 through the ages to come. Humankind will quickly forget, but the world will
 always remember. This legacy, will it be kindness bringing warmth, hope and
-reason, or an ever-hungry shadow that eats tha final light of a dying day? The
-less temporal the fundament of a goal is, the longer and fuller is the
+reason, or an ever-hungry shadow that eats the final light of a dying day? The
+less temporal the foundation of a goal is, the longer and fuller is the
 happiness brought about by progress. Nothing can last longer that the power
 that created time, as that which existed before time is not bound by it.  Thus
 a goal that transcends time is a goal that brings complete fulfilment -
 ultimate self-realization as can be understood by beings bound by time."
 
+The Wanderers Journal Part IV is a book.
+The printing of the Wanderers Journal Part IV is "Truly fascinating is the
+miracle of life. In the vast expanse of the universe, there are but a few motes
+which are able to experience, to observe the universe around them and to
+experience their 'self'. Happiness and joy as well as sadness, fear, anguish,
+terror, loss, and wonder, awe and so many other feelings as part of our unique
+adventure. Pleasant or not at any given moment, this rare occurrence in the
+vastness of the universe is a precious gift. The gift to be able to experience
+said moment and form memories, to contemplate existence itself. Cherish it, as
+it lasts but a tiny moment in the vast ocean of time and space."
+
+The Wanderers Journal Part V is a book.
+The printing of the Wanderers Journal Part V is "Sometimes we are blinded by
+our own state of mind to the wonders of life around us. Remember the precious
+things of today, write them down even, so when it seems there is nothing
+pleasant or good any more - you can read and realise that you at that moment
+are merely blinded by the fickle mind to the beauty of the universe. And that
+is also beautiful and strange."
+
 The Shadow Terminus is a room. "The place where trains depart into the worlds
 of thought."
 The benevolent shadow is a person in the Shadow Terminus. "You feel the
-form-less figure bow in a greeting and smile amicably, you are not sure how you
-sense this but you are quite certain that you do."
+formless figure bow in a greeting and smile amicably, given the formless nature
+of the creature - you are not sure how you sense this but you are quite certain
+that you do."
 
 Book The Gallery of Worlds
+
+Part The Gallery
+
+The room_gallery is west from room_writers_study. "A long corridor of
+dark metal surfaces and vaulted walls goes a long way before you and behind you
+before descending into darkness."
+Printed name of room_gallery is "Gallery".
+
+The jnanin_linkbook2 is a linkbook in the room_gallery.
+Description of jnanin_linkbook2 is "The cover is wrapped in dark green fabric,
+on which -- inset in bold gold letters -- is the name 'Jnanin'.[line break]
+One of the first pages contains an intricate diagram that converges into the
+shape of a palm, the diagram looks alive somehow. The rest of the book is
+filled with strange symbols."
+Printed name is "book of Jnanin".
+Understand "jnanin", "Jnanin", "green book" as jnanin_linkbook2.
+Linked_room of jnanin_linkbook2 is Stone_platform.
+
+The haven_linkbook is a linkbook in the room_gallery.
+Description of haven_linkbook is "The title says 'Haven'".
+Printed name is "book of Haven".
+Understand "haven", "Haven", "book of Haven", "book Haven", "Haven book" as
+    haven_linkbook.
+Linked_room of haven_linkbook is Haven_beach.
+
+The space_station_linkbook is a linkbook in the room_gallery.
+Description of space_station_linkbook is "The title says 'Station 5'".
+Printed name is "book of Station 5".
+Understand "station", "Station", "station book", "book of station", "book of
+    station 5", "book station" as space_station_linkbook.
+Linked_room of space_station_linkbook is Cabin E.
+
 
 Part Writer's Study
 
 The room_writers_study is a room. "The smell of wood, leather, and paper."
 Printed name of room_writers_study is "Writer's Study".
 The writer's desk is a supporter in the room_writers_study.
-Description of the writer's desk is "A large and spaceous wooden table. Rather
+Description of the writer's desk is "A large and spacious wooden table. Rather
 regal, probably made of redwood, or similar. It is looked after and in good
 repair, but obviously seen decades of use.  It has two drawers right below the
 desk surface, one on the left side and one on the right."
@@ -161,11 +213,15 @@ don't write for success. That takes part of your attention away from the
 writing. If you're really doing it, that's all you're doing: writing.' (Herbert
 Frank)".
 
+[TODO - change name of Jnanin as I think this is IP of the Myst series of
+puzzlers]
 The welcome_note is a note on the writer's desk.
 Printed name of welcome_note is "large note".
 Understand "large note", "welcome note", "note" as the welcome_note.
 Description of the welcome_note is "It is a relatively large sheet of high
 grade paper. The elegant writing reads '[printing]'".
+[TODO - the welcome text unnecessarily demystifies a lot of details that are
+better left for the imagination of gradual exposition later - revise]
 The printing of the welcome_note is "It seems you curiosity got the better of
 you and you have followed that enigmatic figure that disappeared right around a
 dark corner, dropping a strange book in its wake. I did not intend for you to
@@ -306,7 +362,7 @@ six of it's walls."
 Hatch E-E is north of Cabin E and south of Intersection E. 
 Hatch E-E is a door. It is closed.
 The maglock is a codelock in Intersection E. The description of the maglock is
-"It is seesm to controll [controllable]."
+"It is seems to control [controllable], but you need to input the password."
 The controllable of the maglock is the hatch_EF. The hatch_EF is closed,
 lockable and locked.
 
