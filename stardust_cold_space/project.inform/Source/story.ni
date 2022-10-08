@@ -45,6 +45,8 @@ suit_rack.
 Printed name of the vacuum_suit is "vacuum suit". Understand "suit", "vacuum
 suit" as vacuum_suit.
 
+[TODO - implement pressure control and disable passage between areas with
+different pressure]
 The airlock_b is west of the suit_bay_b.
 Printed name is "Airlock B".
 Description is "The port-side airlock of the ship, designed to keep the inside
