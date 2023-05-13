@@ -1,4 +1,6 @@
-To begin:
+Include test_module by test.
+
+When play begins:
     say "Hello World."
 
 Haven is a room.
