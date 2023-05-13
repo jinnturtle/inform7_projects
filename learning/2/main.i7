@@ -1,16 +1,29 @@
-Include test_module by test.
+"Learning Inform 7 - Chapter 1 & 2" by Giles Codesmith
 
-When play begins:
-    say "Hello World."
+Volume I - Underpinnings
+
+Volume II - The Story
+
+Book I - Another World
 
 Haven_living_room is a room. Printed name is "Living Room".
 Description is "A rudimentary kitchen attached to a small living room, heavy
 blinds cover a couple of small windows."
+An old couch is in the Haven_living_room. The old couch is fixed in place.
+A small dining table is in the Haven_living_room. The small dining table is
+fixed in place.
+A cell phone is on the small dining table.
+
+Before going to Street_outside_haven for the first time:
+	if the player is not carrying the cell phone:
+		say "Before you leave, you quickly grab the phone.";
+		now the player has the cell phone;
+
 
 Haven_bedroom is south of Haven_living_room. Printed name is "Bedroom".
 "A simple bed occupies an otherwise empty room."
 
-Before going to Street_outside_haven for the first time, say
+After going to Street_outside_haven for the first time, say
 "You step out into the chilly embrace of an Autumn night. It feels different
 somehow. Now that the chaos has somewhat abated, you realise that the noises of
 the main-street are just a little bit more distinct as they reach you from the
@@ -23,4 +36,4 @@ much more mysterious and dangerous than you could have ever believed."
 Street_outside_haven is east from Haven_living_room.
 Printed name is "Street Outside Your Haven".
 Description is "Street-lamps illuminate weathered apartment buildings and
-terraced houses. The street stretches South and North."
+terraced houses. The street stretches North and South."
