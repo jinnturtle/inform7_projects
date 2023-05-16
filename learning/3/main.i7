@@ -1,0 +1,51 @@
+"Learning Inform 7 - Chapter 1 & 2" by Giles Codesmith
+
+Volume I - Underpinnings
+
+Volume II - The Story
+
+Book I - Another World
+
+Haven_living_room is a room. Printed name is "Living Room".
+Description is "A rudimentary kitchen attached to a small living room, heavy
+blinds cover a couple of small windows."
+An old couch is in the Haven_living_room. The old couch is fixed in place.
+A small dining table is in the Haven_living_room. The small dining table is
+fixed in place.
+A cell phone is on the small dining table.
+A small wooden box is on the table. The small wooden box is openable and closed.
+Inside the small wooden box is a paper card.
+
+Haven_bedroom is south of Haven_living_room. Printed name is "Bedroom".
+"A simple bed occupies an otherwise empty room."
+
+Haven_2nd_floor is up from Haven_living_room. Printed name is "2nd Floor
+Landing".
+
+[When given detailed instructions, Inform tends to not fill details it normally
+implies e.g. two-way connections between rooms, etc. (WI 3.3.)]
+Haven_2nd_floor_trap_room is a lighted room south from Haven_2nd_floor. Printed
+name is "Blank Room".
+
+The_haven is a region. The Haven_living_room, Haven_bedroom, Haven_2nd_floor,
+Haven_2nd_floor_trap_room are in The_haven.
+
+Before going to Street_outside_haven for the first time:
+	if the player is not carrying the cell phone:
+		say "Before you leave, you quickly grab the phone.";
+		now the player has the cell phone;
+
+After going to Street_outside_haven for the first time, say
+"You step out into the chilly embrace of an Autumn night. It feels different
+somehow. Now that the chaos has somewhat abated, you realise that the noises of
+the main-street are just a little bit more distinct as they reach you from the
+far end of the neighbourhood, the details of the night around you are just a
+little sharper under the milky glow of an overcast city sky. And even though
+you are now more dangerous than most things you could have imagined just a few
+nights before, you also realise that the world behind every dark corner is so
+much more mysterious and dangerous than you could have ever believed."
+
+Street_outside_haven is east from Haven_living_room.
+Printed name is "Street Outside Your Haven".
+Description is "Street-lamps illuminate weathered apartment buildings and
+terraced houses. The street stretches North and South."
