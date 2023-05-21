@@ -26,12 +26,24 @@ phone has buttons typical of a bygone era, the model seems new." Understand
 
 A small wooden box is on the table. The small wooden box is openable and closed.
 
+[Light and darkness (WI3.15)]
+[TODO - Pretty sure there's a better way and/or more general way to simulate an
+electric torch, but I'm not that knowledgeable with Inform7 yet.]
+A torch is a device on the table. Description is "Seems sturdy and
+probably made of metal.[if lit] A beam of light is shooting out in
+a cone.[otherwise] It is not emitting any light at the moment."
+After switching on the torch:
+	Now the torch is lit.
+After switching off the torch:
+	Now the torch is unlit.
+
 Inside the small wooden box is a paper card and a gray key card. The gray key
 card unlocks the Haven_2nd_floor_one_way_door.
 
 Description of the gray key card is "A flat piece of gray plastic the size of a
 debit card. It is blank but slight bumps on the surface suggest there's
 something inside."
+
 
 [Doors (WI 3.12)]
 A haven_bedroom_door is south of Haven_living_room and north of Haven_bedroom.
@@ -72,6 +84,14 @@ The_haven is a region. The Haven_living_room, Haven_bedroom, Haven_2nd_floor,
 Haven_2nd_floor_trap_room1, Haven_2nd_floor_trap_room2 are in The_haven.
 
 
+Stairwell is east from Haven_living_room. Printed name is
+"Stairwell".
+
+
+[Light and darkness (WI3.15)]
+Basement is a dark room. It is below Stairwell.
+
+
 Before going to Street_outside_haven for the first time:
 	if the player is not carrying the old-school cellphone:
 		say "Before you leave, you quickly grab the phone.";
@@ -88,7 +108,7 @@ nights before, you also realise that the world behind every dark corner is so
 much more mysterious and dangerous than you could have ever believed."
 
 
-Street_outside_haven is east from Haven_living_room.
+Street_outside_haven is east from Stairwell.
 Printed name is "Street Outside Your Haven".
 Description is "Street-lamps illuminate weathered apartment buildings and
 terraced houses. The street stretches North and South."
