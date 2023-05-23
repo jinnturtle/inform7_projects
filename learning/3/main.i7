@@ -37,8 +37,9 @@ After switching on the torch:
 After switching off the torch:
 	Now the torch is unlit.
 
-Inside the small wooden box is a paper card and a gray key card. The gray key
-card unlocks the Haven_2nd_floor_one_way_door.
+Inside the small wooden box is a gray key card. The gray key card unlocks the
+Haven_2nd_floor_one_way_door.
+Test gray_key_card with "open box / take key / up / open door with key".
 
 Description of the gray key card is "A flat piece of gray plastic the size of a
 debit card. It is blank but slight bumps on the surface suggest there's
@@ -46,13 +47,13 @@ something inside."
 
 
 [Doors (WI 3.12)]
-A haven_bedroom_door is south of Haven_living_room and north of Haven_bedroom.
+Haven_bedroom_door is south of Haven_living_room and north of Haven_bedroom.
 Printed name is "heavy door". Initial appearance is "Through a rather heavy door
-you can see the [other side of the haven_bedroom_door]." Description is "A bit
+you can see the [other side of the Haven_bedroom_door]." Description is "A bit
 strange to see such a heavy duty door separating rooms of an apartment,
 something like this might be the outer door for an apartment in a rough
 neighbourhood." It is a door and open. Understand "heavy door", "door",
-"bedroom door" as haven_bedroom_door.
+"bedroom door" as Haven_bedroom_door.
 
 
 Haven_bedroom is a room. Printed name is "Bedroom". "A simple bed occupies an
@@ -65,9 +66,10 @@ Landing".
 
 [One way doors (WI 3.12)]
 Haven_2nd_floor_one_way_door is south from Haven_2nd_floor. Printed name is
-"metal door". It is a door, lockable and locked. Through it is
-Haven_2nd_floor_trap_room1. Understand "door", "vault door", "safe door" as
-Haven_2nd_floor_one_way_door.
+"metal door". Description is "A rather solid looking door[if open], on the
+other side you can see [other side of Haven_2nd_floor_one_way_door][end if]."
+It is a door, lockable and locked. Through it is Haven_2nd_floor_trap_room1.
+Understand "door", "vault door", "safe door" as Haven_2nd_floor_one_way_door.
 
 
 Haven_2nd_floor_trap_room1 is a room.
@@ -80,10 +82,6 @@ Haven_2nd_floor_trap_room2 is a lighted room south from
 Haven_2nd_floor_trap_room1.
 
 
-The_haven is a region. The Haven_living_room, Haven_bedroom, Haven_2nd_floor,
-Haven_2nd_floor_trap_room1, Haven_2nd_floor_trap_room2 are in The_haven.
-
-
 Stairwell is east from Haven_living_room. Printed name is
 "Stairwell".
 
@@ -92,23 +90,45 @@ Stairwell is east from Haven_living_room. Printed name is
 Basement is a dark room. It is below Stairwell.
 
 
-Before going to Street_outside_haven for the first time:
-	if the player is not carrying the old-school cellphone:
-		say "Before you leave, you quickly grab the phone.";
-		now the player has the old-school cellphone;
-
-After going to Street_outside_haven for the first time, say
-"You step out into the chilly embrace of an Autumn night. It feels different
-somehow. Now that the chaos has somewhat abated, you realise that the noises of
-the main-street are just a little bit more distinct as they reach you from the
-far end of the neighbourhood, the details of the night around you are just a
-little sharper under the milky glow of an overcast city sky. And even though
-you are now more dangerous than most things you could have imagined just a few
-nights before, you also realise that the world behind every dark corner is so
-much more mysterious and dangerous than you could have ever believed."
-
-
 Street_outside_haven is east from Stairwell.
 Printed name is "Street Outside Your Haven".
 Description is "Street-lamps illuminate weathered apartment buildings and
 terraced houses. The street stretches North and South."
+
+[Vehicles (WI3.16)]
+The city_car is a vehicle in Street_outside_haven. Printed name is "city car".
+Understand "car" as city_car.
+
+[Testing some basic action logic as I saw in an example in WI chapter 2 or 3]
+Before going to Street_outside_haven for the first time:
+	if the player is not carrying the old-school cellphone:
+		say "You start leaving, but you quickly run back to grab the phone
+			before going outside.";
+		now the player has the old-school cellphone.
+
+After going to Street_outside_haven for the first time:
+	Say "You step out into the chilly embrace of an Autumn night. It feels
+different somehow. Now that the chaos has somewhat abated, you realise that the
+noises of the main-street are just a little bit more distinct as they reach you
+from the far end of the neighbourhood, the details of the night around you are
+just a little sharper under the milky glow of an overcast city sky. And even
+though you are now more dangerous than most things you could have imagined just
+a few nights before, you also realise that the world behind every dark corner
+is so much more mysterious and dangerous than you could have ever believed.";
+	Continue the action.
+
+Instead of going to Street_outside_haven when the player is not inside a vehicle
+and the player is not in the Haven_region:
+	Say "Your haven is that way, but it's rather too far to get there on foot."
+
+
+Haven_region is a region. The Haven_living_room, Haven_bedroom,
+Haven_2nd_floor, Haven_2nd_floor_trap_room1, Haven_2nd_floor_trap_room2,
+Stairwell, Basement, Street_outside_haven are in Haven_region.
+
+
+Club_crimson is north from Street_outside_haven. Description is "Club Crimson".
+
+Instead of going to Club_crimson when the player is not inside a vehicle:
+	Say "Club Crimson is in that direction, but it's quite some distance to
+	cover on foot."
