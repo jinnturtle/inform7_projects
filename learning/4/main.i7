@@ -1,0 +1,18 @@
+"Learning Inform 7" by Jinnturtle
+
+Volume I - Underpinnings
+
+Volume II - The Story
+
+Book I - Looking for a Friend
+
+Part 1 - Arrival
+
+Station_arrivals_zone is a room. "While furnishings are not much to speak of,
+the room is quite spacious. 'P4' is painted in giant block letters on a nearby
+wall. There is a green line painted on the floor."  Printed name of
+Station_arrivals_zone is "Port Zone P4".  A green line is scenery in
+Station_arrivals_zone. "Seems to be painted in some sort of wear resistant
+material, it heads north and has the word 'shuttle' printed along it's length."
+
+Shuttle is a room north from Station_arrivals_zone.
