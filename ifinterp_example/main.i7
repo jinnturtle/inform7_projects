@@ -1,0 +1,72 @@
+"Learning Inform 7" by Jinnturtle
+
+Volume I - Underpinnings
+
+Volume II - The Story
+
+Book I - Haven
+
+Part 1 - Local Underpinnings
+
+To say Shore-description: Say "Gentle breeze in the warm, salty air, and clear,
+    shallow water lapping on white sands . Above, the stars and the spangled
+    sphere of the planet."
+
+A chair is a kind of supporter. A chair is always enterable.
+[TODO - ends up being fixed in place which is not what we allways want, you
+should be techniclly able to take take a chair with you though it should not fit
+in most inventories.]
+
+Part 2 - The Isle
+
+Northern Shore is a room.
+The description of the Northern Shore is "[Shore-description]".
+East of the Northern Shore is the Northeastern Shore.
+
+Northeastern Shore is a room.
+The description of the Northeastern Shore is "[Shore-description]".
+South of the Northeastern Shore is the Eastern Shore.
+
+Palm Beach is northeast of the Northeastern Shore. The description of the Palm
+Beach is "A couple of tropical palms streach into the sky." A wooden beach chair
+is here. The wooden beach chair is a chair. After entering the wooden chair:
+say "[if the wooden chair is in Palm Beach]As you relax, your eyes are drawn
+towards the horizon as the lights of the sphere above play in the gentle ripples
+of the water around[otherwise]You plant yourself on the chair.[end if]"
+
+Eastern Shore is a room.
+The description of the Eastern Shore is "[Shore-description]".
+South of the Eastern Shore is east of the Southern Shore.
+
+Southern Shore is a room.
+The description of the Southern Shore is "[Shore-description]".
+West of the Southern Shore is south of the Western shore.
+
+Western Shore is a room.
+The description of the Western Shore is "[Shore-description]".
+North of the Western Shore is west of the Northern Shore.
+
+
+Common Room is north of the Southern Shore.
+
+Kitchen is west of the Common Room.
+
+Study is north of the Common Room.
+A wooden writing desk is here. The wooden writing desk is a supporter.
+
+Bedroom is northwest of the Common Room.
+A bed is here. The bed is a supporter.
+
+Water Closet is east of the Common Room.
+
+Elevator is east of the Study.
+
+Pier is south of the Southern Shore. "The wooden platform extends into the
+ocean."
+A wooden sign is here. "The sign reads: 'Ferry to spaceport'."
+
+The Dark Green Planet is a backdrop. It is in the Haven Moon. "A large, dark
+sphere in the night sky, speckled with pale green lines and circles by the
+glowing lights of it's vast conurbation. Some lights run in an iris-like
+pattern, turning the planet into a giant eye gazing silently into the depths of
+the void."
